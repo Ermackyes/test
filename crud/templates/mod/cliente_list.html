@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block link %}
+<li class="nav-item"><a href="#" class="nav-link" aria-current="page">Productos</a></li>
+<li class="nav-item"><a href="#" class="nav-link active">Clientes</a></li>
+<li class="nav-item"><a href="#" class="nav-link">Pedidos</a></li>
+{% endblock link %}
+
+{% block content %}
+<a class="btn btn-primary" href="#" role="button">Ingresar</a>
+<br/>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Fehca de ingreso</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Dirección</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>22-05-12</td>
+        <td>Optimus</td>
+        <td>Calle 23a # 2n - 31</td>
+        <td><a class="btn btn-warning" href="#" role="button">Editar</a></td>
+        <td><a class="btn btn-danger" href="#" role="button">Eliminar</a></td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock content %}

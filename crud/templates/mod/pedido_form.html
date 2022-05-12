@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block link %}
+<li class="nav-item"><a href="#" class="nav-link" aria-current="page">Productos</a></li>
+<li class="nav-item"><a href="#" class="nav-link">Clientes</a></li>
+<li class="nav-item"><a href="#" class="nav-link active">Pedidos</a></li>
+{% endblock link %}
+
+{% block content %}
+<form method="post" class="form-control">
+    {% csrf_token %}
+    {{ form.as_table }}
+    <input class="btn btn-success" type="submit" value="Guardar"> | <a class="btn btn-primary" href="#" role="button">Volver</a>
+</form>
+{% endblock content %}

@@ -1,0 +1,42 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block link %}
+<li class="nav-item"><a href="#" class="nav-link" aria-current="page">Productos</a></li>
+<li class="nav-item"><a href="#" class="nav-link">Clientes</a></li>
+<li class="nav-item"><a href="#" class="nav-link active">Pedidos</a></li>
+{% endblock link %}
+
+{% block content %}
+<a class="btn btn-primary" href="#" role="button">Ingresar</a>
+<br/>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Fecha de creado</th>
+        <th scope="col">Cliente</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Total a pagar</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>22-05-12</td>
+        <td>Optimus</td>
+        <td>Televisor LG 22 in</td>
+        <td>2</td>
+        <td>2,400,000.00</td>
+        <td><a class="btn btn-warning" href="#" role="button">Editar</a></td>
+        <td><a class="btn btn-danger" href="#" role="button">Eliminar</a></td>
+      </tr>
+      
+    </tbody>
+</table>
+{% endblock content %}
